@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashbord">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="361dp"
+        android:layout_height="41dp"
+        android:text="name"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/emai"
+        android:layout_width="361dp"
+        android:layout_height="41dp"
+        android:text="email"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="184dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:text="logout"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="193dp"
+        android:layout_height="143dp"
+        />
+
+</LinearLayout>

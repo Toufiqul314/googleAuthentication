@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333381246001",
+    "project_id": "toufiqul-6848d",
+    "storage_bucket": "toufiqul-6848d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333381246001:android:7f8279926e7136568c4910",
+        "android_client_info": {
+          "package_name": "com.example.toufiqul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333381246001-7asfkh8n9agum1gr5lb12a2tk8en4613.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL9J1UMsNtJ5u3nsGlf6gtetRVyTbYuqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333381246001-7asfkh8n9agum1gr5lb12a2tk8en4613.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
