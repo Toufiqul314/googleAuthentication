@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".MainActivity">
+    android:background="#15C1DF"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
-    <com.google.android.gms.common.SignInButton
+    <TextView
+        android:id="@+id/welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/sbtn"
-        />
+        android:text="Wellcome Google signIn"
+        android:textSize="30sp" />
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

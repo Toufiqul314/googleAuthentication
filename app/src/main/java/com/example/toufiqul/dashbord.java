@@ -12,11 +12,13 @@ import android.widget.TextView;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class dashbord extends AppCompatActivity {
     ImageView img;
     TextView nmae,email;
     Button logoutbtn;
+  FirebaseAuth mauth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

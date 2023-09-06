@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.identity.BeginSignInRequest;
@@ -40,6 +42,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);//title hide
+//        getSupportActionBar().hide();//title bar hide
+       // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);//fullScreen
+
+        //action bar logo with title
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.baseline_home_24);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setTitle("Logo App");
+
         setContentView(R.layout.activity_main);
 processrequest();
         
@@ -86,6 +99,7 @@ try {
                         if(task.isSuccessful()) {
                             FirebaseUser user = mauth.getCurrentUser();
                             startActivity(new Intent(getApplicationContext(),dashbord.class));
+                            finish();
                         }else {
                             Toast.makeText(getApplicationContext(), "Error in getting Google's information", Toast.LENGTH_SHORT).show();
                         }
